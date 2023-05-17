@@ -1,0 +1,22 @@
+p {
+	background-color: lightgrey;
+	color: black;
+	text-align: left;
+	font-family: "Times New Roman";
+}
+
+.oomph {
+	text-shadow: 2px 1px #FF0000;
+}
+
+ul {
+	list-style-type: square;
+	color: black;
+	background-color: lightblue;
+}
+
+ol {
+	list-style-type: upper-roman;
+	color: black;
+	background-color: lightgreen;
+}

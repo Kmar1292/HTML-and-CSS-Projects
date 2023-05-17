@@ -1,0 +1,9 @@
+p	{
+	color: white;
+	background: blue;
+	font-weight: bold;
+	text-align: left;
+	}
+.oomph {
+	text-shadow: 3px 1px #FF0000;
+}

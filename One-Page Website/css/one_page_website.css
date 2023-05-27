@@ -1,0 +1,21 @@
+html, body{
+    font-family: "Times New Roman", Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.navigation{
+    font-family: Arial;
+    font-size: 16px;
+}
+
+form{
+    width: 90%;
+    border-top: 2px dotted black;
+    border-right: 2px dotted black;
+    border-bottom: 2px dotted black;
+    border-left: 2px dotted black;
+    padding: 5px;
+    margin: 10px 1em;
+    line-height: 25px;
+    border-radius: 10px;
+}

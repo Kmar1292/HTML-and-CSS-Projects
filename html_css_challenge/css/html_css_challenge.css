@@ -1,0 +1,120 @@
+img{
+    filter: contrast(120%) brightness(110%);
+    border: 2px solid blue;
+    border-radius: 25px;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+footer{
+    text-align: center;
+    font-weight: bold;
+}
+
+table{
+    border: 2px solid black;
+}
+
+table td{
+    padding: 10px;
+    text-align: center;
+}
+
+table th{
+    background-color: yellow;
+    padding: 10px;
+}
+
+.container{
+    position: relative;
+    width: 50%;
+    margin: 100px auto;
+}
+
+.container:hover .image{
+    opacity: 0.3;
+}
+
+.container:hover .middle{
+    opacity: 1;
+}
+
+.image{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+}
+
+.container .vidya{
+    width: 1280px;
+    height: 720px;
+}
+
+.container:hover .vidya{
+    opacity: 0.3;
+}
+
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: #202020;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.navbar a:hover{
+    background: #ddd;
+    color: black;
+}
+
+.column{
+    float: left;
+    height: 20px;
+    width: 50%;
+    color: white;
+    background-color: lightgrey;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.whatev:hover{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    html{
+        color: blue;
+    }
+}

@@ -4,6 +4,7 @@
 		<title>Restaurants to try in East LA</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+		<script src="./js/one_page.js" defer></script>
 	</head>
 	<body>
 		<!--NAV-->
@@ -29,11 +30,10 @@
 		<section id="restaurants">
 			<div>
 				<h2>My Favorite Restaurants</h2>
-				
-				<div>
+				<div class="row">
 					<!--Restaurant 1-->
-					<div>
-						<img src="./images/HiroNori Ramen.jfif" alt="HiroNori Ramen">
+					<div class="column">
+						<img src="./images/HiroNori Ramen_small.jfif" alt="HiroNori Ramen" onclick="openModal();currentSlide(1)" class="hover-shadow">
 						<div>
 							<p>
 							HiroNori Ramen<br>
@@ -43,8 +43,8 @@
 					</div>
 					
 					<!--Restaurant 2-->
-					<div>
-						<img src="./images/The Hat.jpg" alt="The Hat">
+					<div class="column">
+						<img src="./images/The Hat_small.jpg" alt="The Hat" onclick="openModal();currentSlide(2)" class="hover-shadow">
 						<div>
 							<p>
 							The Hat<br>
@@ -54,8 +54,8 @@
 					</div>
 					
 					<!--Restaurant 3-->
-					<div>
-						<img src="./images/Golden Delight.jpg" alt="Golden Delight">
+					<div class="column">
+						<img src="./images/Golden Delight_small.jpg" alt="Golden Delight" onclick="openModal();currentSlide(3)" class="hover-shadow">
 						<div>
 							<p>
 							Golden Delight<br>
@@ -64,12 +64,58 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- Modal/Lightbox -->
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+
+					<div class="modal-content">
+						<!-- Slides -->
+						<div class="mySlides">
+							<div class="numbertext">1 / 3</div>
+							<img src="./images/HiroNori Ramen.jfif" style="width: 100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 3</div>
+							<img src="./images/The Hat.jpg" style="width: 100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 3</div>
+							<img src="./images/Golden Delight.jpg" style="width: 100%">
+						</div>
+
+						<!-- Next/previous controls -->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<!-- Caption text -->
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+
+						<!-- Thumbnail controls -->
+						<div class="column">
+							<img class="demo" src="./images/HiroNori Ramen_small.jfif" onclick="currentSlide(1)" alt="HiroNori Ramen">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="./images/The Hat_small.jpg" onclick="currentSlide(2)" alt="The Hat">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="./images/Golden Delight_small.jpg" onclick="currentSlide(3)" alt="Golden Delight">
+						</div>
+					</div>
+				</div>
 			</div>
+
 		</section>
 		<!--END RESTAURANTS-->
 		
 		<!--REVIEW OF THE WEEK-->
-		<section>
+		<!-- <section>
 			<div id="reviewoftheweek">
 				<h1>Review Of The Week</h1>
 				
@@ -77,7 +123,7 @@
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/0zdk-A8_jYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!--END REVIEW OF THE WEEK-->
 		
 		<!--SUBSCRIBE-->
@@ -106,6 +152,6 @@
 			</footer>
 		</div>
 		<!--END FOOTER-->
-					
+
 	</body>
 </html>
